@@ -4,21 +4,216 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<!-- Подключаем стили проекта -->
+	<meta name="author" content="Dina Polousova">
+	<title>Finsani</title>
+	<!-- стили  -->
+	<link rel="shortcut icon" href="images/src/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+	<link rel="stylesheet" href="css/bootstrap-utilities.scss">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-	Finsani website
-	
-	<p>Далеко-далеко за словесными горами в стране, гласных и согласных...</p>
- 
-	<!-- Подключаем оптимизированное изображение -->
-	<img src="images/dest/image.png" alt="Alt">
- 
-	<!-- Подключаем скрипты проекта -->
-	
+	<header>
+		<div class="demo">
+			<h6 class="demo__p">Это демо-версия сайта</h6></div>
+			
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-2">Logo</div>
+						<div class="col-4">
+							<h3 class="header__phone">x-xxx-xxx xx xx</h3>
+							<a href="tel:" class="header__callback">Обратный звонок</a>
+							<h5 class="header__workhours">Время работы: пн-xx xx:xx-xx:xx</h5>
+						</div>
+						<div class="col-4">
+							<form id="form_search" class="form form-header" action="">
+								<input name="search" type="text" placeholder="Поиск"></input>
+								<!--<button type="submit">
+									<img src='images/src/search.svg' alt="search">
+								</button>-->
+							</form>
+						</div>
+						<div class="col-1 header__cart">
+							<a href="#"><img src='images/src/cart.svg' alt="cart"></a>
+							<label>Корзина</label>
+						</div>
+						<div class="col-1 header__login">
+							<img src="images/src/login.svg" alt="home">
+							<label>Вход</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="subheader">
+				<div class="container">
+					<div class="row">
+						<div class="col-1 offset-md-1 subheader__home">
+							<a href="#">
+							<img src="images/src/home.svg" alt="home"></a>
+						</div>
+						<div class="col">
+							<a href="catalog.html">Каталог</a>
+						</div>
+						<div class="col">
+							<a href="#about">О Нас</a>
+						</div>
+							<div class="col offset-md-1">
+							<a href="#delivery">Доставка и оплата</a>
+						</div>
+						<div class="col offset-md-1">
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+	</header>
+
+	<main>
+		<div id="up" class="photo-big">
+			<h1>Финские <br>сани</h1>
+
+		</div>
+
+		<section class="goods">
+			<div class="container">
+				<h2 class="section-name">товары для спорта и активного отдыха</h2>
+				<h5 class="goods__subheader">от официального представителя</h5>
+				<div class="goods__view">
+					<div class="row">
+						<div class="col goods__item"><img src="images/src/sani1.jpg" alt="sani"></div>
+						<div class="col goods__item"><img src="images/src/sani1.jpg" alt="sani"></div>
+						<div class="col goods__item"><img src="images/src/sani1.jpg" alt="sani"></div>
+						<div class="col goods__item"><img src="images/src/sani1.jpg" alt="sani"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="offer">
+			<div class="line-blur"></div>
+			<div class="container">
+				<h2 class="section-name">спецпредложения</h2>
+			</div>
+		</section>
+		
+		<section class="video">
+			<div class="line-blur"></div>
+			<div class="container">
+				<h2 class="section-name">смотрите наш канал на <span>YouTube</span></h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/DdKCPi9HlRI" 
+				title="YouTube video player" frameborder="0" 
+				allow="accelerometer; autoplay; muted; clipboard-write; 
+				encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="line-blur"></div>
+		</section>
+
+		<section class="feedback">
+			<div class="container">
+				<h2 class="section-name section-name-white">отзывы</h2>
+				<div class="row">
+					<div class="col feedback__item">
+						<h4 class="feedback_header">Наталья, г. Москва</h4>
+						<img src="images/src/face.png" alt="user">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?</p>
+					</div>
+					<div class="col feedback__item">
+						<h4 class="feedback_header">Наталья, г. Москва</h4>
+						<img src="images/src/face.png" alt="user">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?</p>
+					</div>
+					<div class="col feedback__item">
+						<h4 class="feedback_header">Наталья, г. Москва</h4>
+						<img src="images/src/face.png" alt="user">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cum iure?</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="questions">
+			<div class="container questions__wrapper">
+				<div class="row questions-inner">
+					<div class="col-3 offset-1 questions__photo">
+						<img src="images/src/face.png" alt="user">
+						<label>Менеджер</label>
+					</div>
+					<div class="col-8 questions__form">
+						<h4>Остались вопросы?</h4>
+						<h5>оставьте ваш телефон, мы перезвоним вам</h5>
+						<form id="form_callback" class="form form-callback" action="">
+							<input name="callback" type="text" placeholder="+7 123 456-78-90"></input>
+							<button type="submit">➤</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<h2 class="section-name">о нас</h2>
+			</div>
+		</section>
+
+		<section class="delivery" id="delivery">
+			<div class="container">
+				<h2 class="section-name">Доставка и оплата</h2>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer__wrapper">
+					<div class="col footer__item">
+						<ul>
+							<li><a href="#">Lorem, ipsum.</a></li>
+							<li><a href="#">Lorem, ipsum.</a></li>
+							<li><a href="#">Lorem, ipsum.</a></li>
+							<li><a href="#">Lorem, ipsum.</a></li>
+						</ul>
+					</div>
+					<div class="col footer__item">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Меню</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+						</ul>
+					</div>
+					<div class="col footer__item">
+						<ul>
+							<li><a href="#">Контакты</a></li>
+							<li><h5>e-mail: xxxxxxx@xxxxx</h5></li>
+							<li><h5>x-xxx-xxx xx xx</h5></li>
+							<li><h5>пн-xx xx:xx-xx:xx</h5></li>
+						</ul>
+					</div>
+					<div class="col-1 footer__up">
+						<a href="#"><img src="images/src/up.svg" class="pageup" alt="arrowup"></a> 
+						<label class="pageup">наверх</label>
+					</div>
+				</div>
+				<a href="#up" class="footer__policy">Политика конфиденциальности</a>
+				<div class="line-short"></div>
+				<div class="footer-social">
+					<div class="footer-social__item">
+						<img src="images/src/telegram.svg" alt="telegram">
+					</div>
+					<div class="footer-social__item">
+						<img src="images/src/vk.svg" alt="VK">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<!-- скрипты -->
 	<script src="js/jquery-3.6.1.min.js"></script>
 	<script src="js/app.min.js"></script>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
