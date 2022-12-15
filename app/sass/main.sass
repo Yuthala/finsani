@@ -1,0 +1,331 @@
+@import 'var.sass'
+@import 'mixins'
+
+:root 
+	font-size: calc(0.5em + 0.5vw)
+
+/* general */
+body
+	font-family: 'Roboto', sans-serif
+	font-style: normal
+	font-weight: 300
+
+a 
+	text-decoration: none
+	color: initial 
+	cursor: pointer
+	&:hover
+		color: initial
+
+button 
+	cursor: pointer
+
+.section-name
+	text-align: center
+	font-weight: 900
+	padding-top: 1.5em
+	text-transform: uppercase
+	color: $main
+	&-white 
+		color: $light
+
+.line-blur
+	width: 100%
+	height: 1px
+	background-color: #b8b2b2
+	filter: blur(2px)
+
+.line-short
+	width: 20%
+	height: 1px
+	background-color: $light
+	margin: 1em auto
+
+h1 
+	font-size: 5.4rem
+	font-weight: 900
+
+h2 
+	font-size: 2.2rem
+
+h3 
+	font-size: 1.4rem
+	font-weight: 300
+
+h4 
+	font-size: 1.1rem
+
+h5 
+	font-size: 0.9rem
+	font-weight: 700
+
+p
+	font-size: 0.75rem
+	font-weight: 300
+
+label
+	font-size: 0.75rem
+	font-weight: 700
+
+/* import*/
+@import 'forms'
+
+/* container */
+.container
+	max-width: 1140px
+	margin: 0 auto
+
+	/* HEADER */
+.demo
+	height: 3em
+	color: $main
+	text-align: center
+	background-color: rgba(131, 186, 214, .6)
+	&__p 
+		line-height: 2.5
+.header
+	height: 5em
+	background-color: $accent
+	&__phone 
+		margin-bottom: -5px
+		&::before
+			content: ''
+			display: inline-block
+			background-image: url('../images/src/phone.svg')
+			background-position: left center
+			background-repeat: no-repeat
+			background-size: 24px
+			width: 20px
+			height: 20px
+			padding-left: 24px
+			vertical-align: bottom
+	&__workhours
+		margin-top: .5em
+		text-transform: uppercase
+	&__callback
+		margin-top: 0
+		margin-left: 2em
+		font-size: .7em
+		font-weight: 300
+		line-height: 11px
+		color: $light
+		text-transform: uppercase
+	&__cart, &__login 
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		img
+			width: 2em
+			margin: 1em 0 0 .5em
+		label
+			color: $light
+			text-transform: uppercase
+			margin-left: 0.5em
+.subheader 
+	height: 2.5em
+	background-color: $dark
+	color: $light
+	&__home
+		img
+			width: 2.4em
+	a
+		color: $light
+		font-weight: 700
+		line-height: 2.2
+		&:hover
+			color: $main
+
+/* SECTION 1 */ 
+.photo-big
+	position: relative
+	height: calc($section-height * 3)
+	background: url(../images/src/main.jpg) center (center/cover) no-repeat
+	@include box-shadow
+	h1 
+		position: absolute
+		left: 1.5em
+		top: .8em
+		color: $accent
+		text-transform: uppercase
+		transform: skewX(-20deg)
+
+/* GOODS */
+.goods
+	min-height: calc($section-height * 2.6)
+	&__subheader
+		text-align: center
+		text-transform: uppercase
+	&__view 
+		margin: 4em 0
+	&__item 
+		img
+			height: 10em
+			@include border
+			
+/* OFFER */
+.offer 
+	min-height: calc($section-height * 2)
+	background: url(../images/src/square_bg.png) center (center/cover) no-repeat
+		
+/* VIDEO *//import css-variables from 
+.video
+	min-height: 30em
+	span 
+		text-transform: none
+	iframe
+		display: block
+		height: 315px
+		margin: 3em auto
+
+/* FEEDBACK */
+.feedback  
+	min-height: calc($section-height * 2.6)
+	background-color: $accent
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		gap: 2em
+		padding: 1.2em 1em
+		margin: 3em
+		background-color: $light
+		@include border
+		&:hover
+			border: 1px solid rgba(86, 75, 75,.4)
+		p
+			line-height: 1.6
+			margin-bottom: 0
+/* QUESTIONS */ 
+.questions 
+	min-height: $section-height
+	background-color: $dark
+	&__wrapper
+		padding-top: 1em
+	&-inner 
+		min-height: calc($section-height - 3em)
+		width: 75%
+		background-color: $light
+		margin: 0 auto
+		img
+			height: 5.5em
+	&__photo 
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__form
+		h5
+			font-weight: 500
+		h4 
+			font-weight: 700
+			color: $main
+			margin-top: 0.8em
+		input
+			width: 50%
+			height: 2.1em
+		button
+			@include border
+			background-color: $light
+			width: 20%
+			color: $main
+			&:hover
+				color: $main-hover
+				border: 1px solid rgba(86, 75, 75,.4)
+				box-shadow: none
+/* ABOUT */ 
+.about 
+	min-height: calc($section-height * 2)
+	background: url(../images/src/square_bg.png) center (center/cover) no-repeat
+	@include box-shadow
+
+/* DELIVERY */ 
+.delivery
+	min-height: calc($section-height * 3)
+
+/* FOOTER */
+.footer 
+	min-height: calc($section-height * 2)
+	background-color: $dark
+	padding-bottom: 1.5em
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 2em
+		margin: 0 auto
+	&__item
+		width: 33%
+		&:nth-child(3)
+			width: 25%
+		ul
+			list-style-type: none
+			li, a
+				color: $light
+				font-weight: 700
+				line-height: 2.8
+
+			h5
+				font-weight: 500
+				line-height: 2.5
+	&__up 
+		a
+			display: block
+			position: fixed
+			bottom: 10em
+			right: 17em
+		img
+			display: block
+			width: 3em
+			margin: 0 auto
+		label
+			position: fixed
+			bottom: 10.5em
+			right: 22.65em
+			color: $main
+			text-transform: uppercase
+			font-weight: 300
+	&__policy 
+		display: block
+		color: $accent
+		text-align: center
+		font-size: 0.8em
+	&-social 
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 2.5em
+		padding-top: 1em
+		img
+			width: 3em
+.pageup
+	display: none
+
+/* =======CATALOG=======*/
+.product
+	height: 1200px
+	&-item 
+		width: 300px
+		height: 420px
+		@include border
+		padding: 20px
+		margin: 100px 300px
+		&__subtitle 
+			padding-top: 20px
+	img
+		width: 100%
+	h5
+		color: red
+		font-size: 24px
+		text-transform: uppercase
+.price 
+	color: red
+	font-size: 24px
+
+
+
+
+
+
+
+
