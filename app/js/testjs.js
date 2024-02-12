@@ -1,3 +1,3 @@
 //test file 2
 
-//comment fir test added
+//comment for git merge test added
