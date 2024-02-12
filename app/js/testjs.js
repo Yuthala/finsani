@@ -3,5 +3,5 @@
 //comment for git merge test added
 
 function emptyFunc() {
-	alert ("smth");
+	console.log('blabla');
 }
