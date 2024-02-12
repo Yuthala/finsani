@@ -2,4 +2,6 @@
 
 //comment for git merge test added
 
-function emptyFunc() {}
+function emptyFunc() {
+	console.log('blabla');
+}
